@@ -118,7 +118,7 @@ class VPN(QWidget):
                 self.log_message("VPN успешно подключен!")
                 self.log_message("Настройка DNS...")
 
-                #ввести IP1 и IP1 ("8.8.8.8")
+                #ввести IP1 и IP2 (пример: "8.8.8.8")
                 ps_script = f"""
                         Set-DnsClientServerAddress -InterfaceAlias '{vpn_name}' -ServerAddresses ("IP1", "IP2")
                         Write-Output 'DNS успешно настроен'
